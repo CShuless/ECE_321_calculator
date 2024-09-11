@@ -4,7 +4,7 @@
 # include <stdio.h>
 
 int main() {
-    int N1, N2, Result;
+    int N1, N2, Result, Operation;
 
 
 printf("Enter first number: ");   // getting input
@@ -17,11 +17,31 @@ printf("Enter second number: ");   // getting input
 // check for integer
 while (scanf("%d", &N2 ) != 1){  
     printf("Invalid Input. Please enter an integer: ");
+
 }
 
-Result = N1+N2;
+printf("Enter '1' for addition or '2' for subtraction: ");
+while(1){
+    scanf(&Operation)
+    if (Operation == 1 || Operation == 2) {
+        break;
+    } else{
+        printf("Invalid choice. Please enter '1' or '2'");
+    }
 
-printf("the result of adding %d and %d is: %d/n", N1, N2, Result);
+
+}
+
+
+
+if (Operation == 1){
+    Result = N1+N2;
+    printf("The result of adding %d and %d is %d/n", N1, N2, Result);
+}else if (Operation ==2){
+    Result = N1-N2;
+    printf("The result of subtracting %d and %d is %d/n", N1, N2, Result);
+}
+
 
 
 
