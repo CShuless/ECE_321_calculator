@@ -1,0 +1,31 @@
+// Lab2 Simple Calculator
+// Curtis Shuman
+
+# include <stdio.h>
+
+int main() {
+    int N1, N2, Result;
+
+
+printf("Enter first number: ");   // getting input
+// check for integer
+while (scanf("%d", &N1 ) != 1){  
+    printf("Invalid Input. Please enter an integer: ");
+}
+
+printf("Enter second number: ");   // getting input
+// check for integer
+while (scanf("%d", &N2 ) != 1){  
+    printf("Invalid Input. Please enter an integer: ");
+}
+
+Result = N1+N2;
+
+printf("the result of adding %d and %d is: %d/n", N1, N2, Result);
+
+
+
+
+
+
+}
