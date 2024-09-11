@@ -8,13 +8,28 @@ int main() {
     int N1, N2, Operation;
 
 
-printf("Enter first number: ");
-    scanf("%d", &N1 ) 
-printf("Enter second number: "); 
-    scanf("%d", &N2 ) 
-printf("Enter '1' for addition, '2' for subtraction, '3' for multiplication or '4' for division: ");
-    scanf(&Operation)
+printf("Enter first number: ");   // getting input
+// check for integer
+while (scanf("%d", &N1 ) != 1){  
+    printf("Invalid Input. Please enter an integer: ");
+}
 
+printf("Enter second number: ");   // getting input
+// check for integer
+while (scanf("%d", &N2 ) != 1){  
+    printf("Invalid Input. Please enter an integer: ");
+
+}
+
+printf("Enter '1' for addition, '2' for subtraction, '3' for multiplication or '4' for division: ");
+while(1){
+    scanf(&Operation)
+    if (Operation == 1 || Operation == 2 || Operation == 3 || Operation == 4) {
+        break;
+    } else{
+        printf("Invalid choice. Please enter '1', '2', '3' or '4'");
+    }
+}
 
 
 if (Operation == 1){
