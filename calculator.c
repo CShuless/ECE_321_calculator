@@ -7,6 +7,16 @@ int main() {
 
     int N1, N2, Operation;
 
+
+printf("Enter first number: ");
+    scanf("%d", &N1 ) 
+printf("Enter second number: "); 
+    scanf("%d", &N2 ) 
+printf("Enter '1' for addition, '2' for subtraction, '3' for multiplication or '4' for division: ");
+    scanf(&Operation)
+
+
+
 if (Operation == 1){
     int Result = N1+N2;
     printf("The result of adding %d and %d is %d\n", N1, N2, Result);
